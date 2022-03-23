@@ -1,4 +1,4 @@
-package com.konopackipio1;
+package com.konopackipio1.examplePrograms;
 
 import java.io.BufferedReader;
 import java.io.IOException;
