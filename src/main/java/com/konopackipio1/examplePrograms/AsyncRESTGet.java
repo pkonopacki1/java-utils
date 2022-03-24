@@ -95,7 +95,6 @@ public class AsyncRESTGet implements Runnable{
             System.err.println("Could not parse to json");
         } catch (InterruptedException e) {
             System.err.println("Thread interrupted");
-            Stream.of(e.getSuppressed()).forEach(System.out::println);
         }
 
     }

@@ -21,8 +21,8 @@ public class DocumentCalculator {
     public static void calculateFile(String pathString) {
         Path path = Paths.get(pathString);
 
-        try (BufferedReader reader = new BufferedReader(Files.newBufferedReader(path));
-            BufferedWriter writer = new BufferedWriter(Files.newBufferedWriter(path, StandardOpenOption.WRITE))) {
+        try (BufferedReader reader = Files.newBufferedReader(path);
+            BufferedWriter writer = Files.newBufferedWriter(path, StandardOpenOption.WRITE)) {
 
                 String line;
                 while((line = reader.readLine()) != null) {
